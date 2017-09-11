@@ -25,7 +25,7 @@ Masking out a triangle area which stretches from far left to right and a height 
 
 **Finding lines**
 
-The hough transformation was used on masked edges to extract lines. I chose the parameters so that there is a good tradeoff between filtering out lines and keeping enough lines in the result for the lane line estimation. The resolution in the parameter spaces was chosen to be 1px for `rho` and 1° for `theta`. The `hough_threshold` was set to 20, `min_line_len` to 80px and `max_line_gap` to 50px.
+The hough transformation was used on masked edges to extract lines. I chose the parameters so that there is a good tradeoff between filtering out lines and keeping enough lines in the result for the lane line estimation. The resolution in the parameter spaces was chosen to be 1px for `rho` and 0.5° for `theta`. The `hough_threshold` was set to 20, `min_line_len` to 80px and `max_line_gap` to 50px.
 
 **Filtering and extrapolation**
 
